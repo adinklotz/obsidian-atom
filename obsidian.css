@@ -201,11 +201,11 @@ h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .theme-dark :not(pre) > code[class*='language-'],
