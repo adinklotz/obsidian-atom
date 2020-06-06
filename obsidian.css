@@ -117,7 +117,11 @@ blockquote {
 }
 
 body {
-  --font-monospace: 'Fira Code', 'Source Code Pro', monospace;
+  --font-monospace: 'Hack', 'Fira Code', 'Source Code Pro', monospace;
+}
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like, .cm-header, .cm-formatting-header {
+  font-family: var(--font-monospace) !important;
 }
 
 mjx-container[jax='CHTML'] {
@@ -130,6 +134,7 @@ mjx-container[jax='CHTML'] {
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end) {
   color: inherit;
+  font-family: var(--font-monospace);
 }
 
 .cm-s-obsidian span.cm-inline-code,
@@ -251,6 +256,7 @@ pre[class*='language-'] {
   padding: 1em !important;
   margin: .5em 0 !important;
   overflow: auto !important;
+  font-family: var(--font-monospace) !important;
 }
 
 /* Inline code */
@@ -258,6 +264,7 @@ pre[class*='language-'] {
   padding: .1em !important;
   border-radius: .3em !important;
   white-space: normal !important;
+  font-family: var(--font-monospace) !important;
 }
 
 .token.comment,
