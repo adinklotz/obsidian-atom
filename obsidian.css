@@ -415,3 +415,14 @@ mark, .cm-highlight, .cm-formatting-highlight {
 .cm-inline-code + .cm-formatting-code {
   border-radius: 0 var(--text-radius) var(--text-radius) 0;
 }
+
+/* Cursor */
+.cm-fat-cursor .CodeMirror-cursor {
+    background-color: var(--text-normal) !important;
+    width: 1.1ch;
+    z-index: 10 !important;
+}
+
+.cm-animate-fat-cursor {
+    background-color: var(--cursor-color) !important;
+}
