@@ -20,7 +20,7 @@
   --text-faint: #555;
   --text-error: #e16d76;
   --text-error-hover: #c9626a;
-  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-highlight-bg: var(--yellow);
   --text-selection: rgba(0, 122, 255, 0.2);
   --text-on-accent: #dcddde;
   --interactive-normal: #20242b;
@@ -384,13 +384,29 @@ pre.line-numbers > code {
 }
 
 mark {
-  padding: 0 0.1em;
   border-radius: var(--text-radius);
 }
 
-/* The backticks on inline code are separate elements from the code, so
-have to format them separately for adding rounded corners */
-/* Format the left backtick */
+mark, .cm-highlight, .cm-formatting-highlight {
+  color: var(--background-primary) !important;
+  padding: 0 0.1em 0 0.1em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* The == surrounding highlights are separate elements from the hightlighted
+   text, so have to style them separately */
+/* Style the left == */
+.cm-formatting-highlight {
+  border-radius: var(--text-radius) 0 0 var(--text-radius);
+}
+
+/* Style the right == */
+.cm-highlight + .cm-formatting-highlight {
+  border-radius: 0 var(--text-radius) var(--text-radius) 0;
+}
+
+/* The backticks on inline code are also separate elements */
 .cm-formatting-code {
   border-radius: var(--text-radius) 0 0 var(--text-radius);
 }
@@ -398,15 +414,4 @@ have to format them separately for adding rounded corners */
 /* Format the right backtick */
 .cm-inline-code + .cm-formatting-code {
   border-radius: 0 var(--text-radius) var(--text-radius) 0;
-}
-
-.cm-formatting-highlight {
-  border-radius: var(--text-radius) 0 0 var(--text-radius);
-  padding-left: 0.1em;
-}
-
-/* Format the right backtick */
-.cm-highlight + .cm-formatting-highlight {
-  border-radius: 0 var(--text-radius) var(--text-radius) 0;
-  padding-right: 0.1em;
 }
