@@ -118,6 +118,7 @@ blockquote {
 
 body {
   --font-monospace: 'Hack', 'Fira Code', 'Source Code Pro', monospace;
+  --text-radius: 0.2em;
 }
 
 .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like, .cm-header, .cm-formatting-header {
@@ -380,4 +381,32 @@ pre.line-numbers > code {
   display: block !important;
   padding-right: 0.8em !important;
   text-align: right !important;
+}
+
+mark {
+  padding: 0 0.1em;
+  border-radius: var(--text-radius);
+}
+
+/* The backticks on inline code are separate elements from the code, so
+have to format them separately for adding rounded corners */
+/* Format the left backtick */
+.cm-formatting-code {
+  border-radius: var(--text-radius) 0 0 var(--text-radius);
+}
+
+/* Format the right backtick */
+.cm-inline-code + .cm-formatting-code {
+  border-radius: 0 var(--text-radius) var(--text-radius) 0;
+}
+
+.cm-formatting-highlight {
+  border-radius: var(--text-radius) 0 0 var(--text-radius);
+  padding-left: 0.1em;
+}
+
+/* Format the right backtick */
+.cm-highlight + .cm-formatting-highlight {
+  border-radius: 0 var(--text-radius) var(--text-radius) 0;
+  padding-right: 0.1em;
 }
