@@ -387,11 +387,11 @@ pre.line-numbers > code {
 
 mark {
   border-radius: var(--text-radius);
+  padding: 0 0.1em 0 0.1em;
 }
 
 mark, .cm-highlight, .cm-formatting-highlight {
   color: var(--text-highlight) !important;
-  padding: 0 0.1em 0 0.1em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
@@ -401,11 +401,13 @@ mark, .cm-highlight, .cm-formatting-highlight {
 /* Style the left == */
 .cm-formatting-highlight {
   border-radius: var(--text-radius) 0 0 var(--text-radius);
+  padding-left: 0.1em;
 }
 
 /* Style the right == */
 .cm-highlight + .cm-formatting-highlight {
   border-radius: 0 var(--text-radius) var(--text-radius) 0;
+  padding-right: 0.1em;
 }
 
 /* The backticks on inline code are also separate elements */
