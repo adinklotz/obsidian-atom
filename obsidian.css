@@ -387,13 +387,15 @@ pre.line-numbers > code {
 
 mark {
   border-radius: var(--text-radius);
-  padding: 0 0.1em 0 0.1em;
+  padding: 0em 0.1em 0em 0.1em;
 }
 
 mark, .cm-highlight, .cm-formatting-highlight {
   color: var(--text-highlight) !important;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 /* The == surrounding highlights are separate elements from the hightlighted
