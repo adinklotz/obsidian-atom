@@ -430,3 +430,11 @@ mark, .cm-highlight, .cm-formatting-highlight {
 .cm-animate-fat-cursor {
     background-color: var(--cursor-color) !important;
 }
+
+.cm-formatting-strong, .cm-formatting-em, .cm-formatting-code {
+  color: var(--text-muted);
+}
+
+.cm-s-obsidian .CodeMirror-linenumber {
+  color: var(--text-muted);
+}
