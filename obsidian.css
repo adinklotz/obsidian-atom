@@ -454,3 +454,6 @@ mark, .cm-highlight, .cm-formatting-highlight {
   max-height: unset;
   background-color: var(--background-primary); /*define different bg color*/
 }
+
+/* Hide the title H1 in the embed */
+.markdown-embed-content h1:first-child {display:none};
