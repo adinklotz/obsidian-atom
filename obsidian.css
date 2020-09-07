@@ -438,3 +438,7 @@ mark, .cm-highlight, .cm-formatting-highlight {
 .cm-s-obsidian .CodeMirror-linenumber {
   color: var(--text-muted);
 }
+
+.search-result-file-matched-text {
+  color: var(--text-highlight);
+}
