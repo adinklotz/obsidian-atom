@@ -464,3 +464,7 @@ mark, .cm-highlight, .cm-formatting-highlight {
 .markdown-embed-content h6:first-child {
     display:none;
 }
+
+.titlebar {
+    background-color: var(--background-secondary)
+}
