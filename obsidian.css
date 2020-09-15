@@ -472,3 +472,7 @@ mark, .cm-highlight, .cm-formatting-highlight {
 .workspace-ribbon {
   border-style: none;
 }
+
+.empty-state {
+    background-color: var(--background-secondary);
+}
