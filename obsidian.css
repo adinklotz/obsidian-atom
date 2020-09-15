@@ -468,3 +468,7 @@ mark, .cm-highlight, .cm-formatting-highlight {
 .titlebar {
     background-color: var(--background-secondary)
 }
+
+.workspace-ribbon {
+  border-style: none;
+}
