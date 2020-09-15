@@ -155,6 +155,11 @@ h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
   border: none;
 }
 
+.view-header {
+    border-top: none;
+    border-radius: 0;
+}
+
 .status-bar, .side-dock.mod-right, .side-dock.mod-left {
   border-color: var(--panel-border-color);
   border-width: 1px;
@@ -472,4 +477,3 @@ mark, .cm-highlight, .cm-formatting-highlight {
     border-top-left-radius:  0 !important;
     border-top-right-radius: 0 !important;
 }
-
