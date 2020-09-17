@@ -480,5 +480,5 @@ mark, .cm-highlight, .cm-formatting-highlight {
 }
 
 .markdown-preview-view, .markdown-source-view {
-    box-shadow: 0px 0px 20px 1px var(--background-modifier-box-shadow) inset, -0px -0px 5px var(--background-modifier-box-shadow) inset;
+    box-shadow: inset 6px 6px 10px -6px rgba(0,0,0,0.5);
 }
