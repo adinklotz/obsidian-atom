@@ -478,3 +478,7 @@ mark, .cm-highlight, .cm-formatting-highlight {
     border-top-left-radius:  0 !important;
     border-top-right-radius: 0 !important;
 }
+
+.markdown-preview-view, .markdown-source-view {
+    box-shadow: 0px 0px 20px 1px var(--background-modifier-box-shadow) inset, -0px -0px 5px var(--background-modifier-box-shadow) inset;
+}
