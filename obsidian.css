@@ -478,11 +478,3 @@ mark, .cm-highlight, .cm-formatting-highlight {
     border-top-left-radius:  0 !important;
     border-top-right-radius: 0 !important;
 }
-
-.markdown-preview-view, .markdown-source-view {
-    box-shadow: inset 6px 6px 10px -6px rgba(0,0,0,0.5);
-}
-
-div.markdown-embed-content > div.markdown-preview-view {
-    box-shadow: none;
-}
