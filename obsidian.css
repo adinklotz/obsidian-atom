@@ -478,3 +478,7 @@ mark, .cm-highlight, .cm-formatting-highlight {
     border-top-left-radius:  0 !important;
     border-top-right-radius: 0 !important;
 }
+
+.markdown-preview-view code {
+  color: var(--text-normal);
+}
