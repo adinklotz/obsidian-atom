@@ -462,6 +462,11 @@ mark, .cm-highlight, .cm-formatting-highlight {
     display:none;
 }
 
+/* Remove the extra padding around embeds */
+.markdown-embed .markdown-preview-view {
+  padding: 0;
+}
+
 .titlebar {
     background-color: var(--background-secondary)
 }
